@@ -6,6 +6,7 @@ problems[2] = function() {
 		if (i % 2 === 0) {
 			sum += i;
 		}
+		counter++;
 	}
 	return sum;
 };

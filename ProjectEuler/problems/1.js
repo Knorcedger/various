@@ -4,6 +4,7 @@ problems[1] = function() {
 		if (i % 3 === 0 || i % 5 === 0) {
 			sum += i;
 		}
+		counter++;
 	}
 	return sum;
 };
