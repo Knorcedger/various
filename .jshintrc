@@ -1,0 +1,13 @@
+{
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"browser": true,
+	"globals": {
+		"jQuery": true
+	},
+	"smarttabs": true,
+	"loopfunc": true,
+	"trailing": true,
+	"scripturl": true
+}
