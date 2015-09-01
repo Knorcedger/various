@@ -5,11 +5,11 @@ problems[4] = function() {
 		var result = true;
 		var xString = x + '';
 		for (var i = 0, length = parseInt(xString.length / 2, 10); i < length; i++) {
+			counter++;
 			if (xString.substr(i, 1) !== xString.substr(-(i + 1), 1)) {
 				result = false;
 				break;
 			}
-			counter++;
 		}
 
 		return result;
@@ -21,11 +21,11 @@ problems[4] = function() {
 		var xString = x + '';
 		var digit;
 		for (var i = 0, length = xString.length; i < length; i++) {
+			counter++;
 			digit = xString.substr(i, 1);
 			if (digits.indexOf(digit) === -1) {
 				digits.push(digit);
 			}
-			counter++;
 		}
 
 		return digits.length;
@@ -34,18 +34,16 @@ problems[4] = function() {
 	var number;
 	var matches = [];
 	for (var i = 999 ; i > 100; i--) {
+		counter++;
 		for (var j = 999; j > 100; j--) {
+			counter++;
 			number = i * j;
 			if (isPalindromic(number)) {
-				if (digitsNumber(number) === 2) {
-					if (matches.indexOf(number) === -1) {
-						matches.push(number);
-					}
+				if (matches.indexOf(number) === -1) {
+					matches.push(number);
 				}
 			}
-			counter++;
 		}
-		counter++;
 	}
 
 	// sort from bigger to smaller
