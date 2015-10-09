@@ -3,5 +3,7 @@
 	"maximumLineLength": 120,
 	"validateIndentation": "\t",
 	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
-	"excludeFiles": ["**/**/js/modules/templates.js"]
+	"excludeFiles": [
+		"/mood.js"
+	]
 }
